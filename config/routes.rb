@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   get 'about/forklifts'
 
   get 'about/chargers'
@@ -12,6 +14,6 @@ Rails.application.routes.draw do
   resources :users
 
   resources :products
-  root 'application#hello'
+  root 'welcome#index'
 end
 
